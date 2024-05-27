@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Layout block</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Layout block</h1>
+<div>
+  <h2>Информация</h2>
+  params: 1 <br>
+  photo: 0 – 10 <br>
+  skills: 0 – 7
+</div>
+<form class="form">
+  <h2>Настройка</h2>
+  <p>
+    <label class="label" for="skills">Skills</label>
+    <select class="select" id="skills">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7" selected>7</option>
+    </select>
+  </p>
+  <p>
+    <label class="label" for="photos">Photo</label>
+    <select class="select" id="photos">
+      <option value="0" selected>0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+    </select>
+  </p>
+
+</form>
+
+<h2>Main Grid</h2>
+
+<div class="grid-main">
+  <div class="params">
+    <div class="params__item">
+      <div class="params__icon"></div>
+      <div class="params__text">
+        <div class="params__title">Trainee age</div>
+        Adults and children
+      </div>
+    </div>
+    <div class="params__item">
+      <div class="params__icon"></div>
+      <div class="params__text">
+        <div class="params__title">Trainee level</div>
+        Beginner, Intermediate
+      </div>
+    </div>
+    <div class="params__item">
+      <div class="params__icon"></div>
+      <div class="params__text">
+        <div class="params__title">Specialization</div>
+        General, freeride, mogul
+      </div>
+    </div>
+  </div>
+</div>
+
+<h2>Scills Grid</h2>
+<div class="grid-skills grid-skills--7">
+  <div class="skills"></div>
+  <div class="skills"></div>
+  <div class="skills"></div>
+  <div class="skills"></div>
+  <div class="skills"></div>
+  <div class="skills"></div>
+  <div class="skills"></div>
+</div>
+
+
+<!-- template -->
+<template id="templateParams">
+  <div class="params">
+    <div class="params__item">
+      <div class="params__icon"></div>
+      <div class="params__text">
+        <div class="params__title">Trainee age</div>
+        Adults and children
+      </div>
+    </div>
+    <div class="params__item">
+      <div class="params__icon"></div>
+      <div class="params__text">
+        <div class="params__title">Trainee level</div>
+        Beginner, Intermediate
+      </div>
+    </div>
+    <div class="params__item">
+      <div class="params__icon"></div>
+      <div class="params__text">
+        <div class="params__title">Specialization</div>
+        General, freeride, mogul
+      </div>
+    </div>
+  </div>
+</template>
+
+<template id="templatePhoto">
+  <div class="photo">
+    <img src="./img/" alt="">
+  </div>
+</template>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
